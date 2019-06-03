@@ -15272,9 +15272,10 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Dear Sir or Madam,
-We developed a machine learning model that will help CharityML to find donors. Indeed, our algorithm is called Ada Boost, which means Adaptative Boosting and it is based on another algorithm called Decision Trees.</p>
-<p>In a nutshell, our model will train with the previous data containing characteristics of more than 45k individuals such as race, age, education level, sex, income, and others. In this process, our model will automatically correct itself until it achieves optimized results. Thus, it will be possible to find the people who receive more than $50k (possible donors) with more than 80% of correctness. Another point is that we will also be able to make our model even better by tuning it to achieve higher scores without spending too much time.</p>
+<p>It was developed a machine learning model that will help CharityML to find donors. Indeed, the algorithm is called Ada Boost, which means Adaptative Boosting and it is based on another algorithm called Decision Trees.</p>
+<p>First of all, Ada Boost is an ensemble method, which means that it has multiple weak learners, and they combine themselves at the end into one strong learner. This process is based on adaptation, which works in the following way. At the beggining of the training, each weak learner has equal weight. Then, on each round, the weights of the misclassified examples are increased. In fact, the weak learners are forced to focus on the tough examples to classify. As a consequence, the overall accuracy will increase during this process. By the end, there will be many weak learners trained and they will be combined as a cascade, this will form a strong learner, which is able to perform the classification.</p>
+<p>Second, the base estimator of the Ada Boost is a Decision Tree. What means that? Ok... it is simply a conditional instance that returns a "yes" or a "no" given a specific question. For example, when it is asked, "is this person is a woman?" Then the tree says "yes", if that is true. So, that's it.</p>
+<p>In conclusion, each weak learner is a Decision Tree that answer questions throughout the process, when those weak learners are put together they form the Ada Boost model. Indeed, the answers of each tree are put together and they form a very good guess to classify our problem. In the case of CharityML, our model will say if a person receives more than $50k or not.</p>
 
 </div>
 </div>
