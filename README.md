@@ -1,13 +1,10 @@
 # ml (machine learning)
 
-This repository presents different applications of supervisory learning. It is based on Python 3, sklearn and jupyter notebook. 
-
-The purpose is to help users to understand the different tools applied in machine learning. 
-
+This repository presents different applications of surpervised and unsupervised learning. It is based on Python 3, Sklearn and Jupyter Notebook. 
 
 _Applications (/projects):_
-* __/boston_housing__ - A linear regression model to predict housing prices
-* __/sms_spam_det__ - A classifier based on Naive Bayes to detect SPAM - SMS messages
+* __/boston_housing__ - A linear regression model to predict housing prices.
+* __/sms_spam_det__ - A classifier based on Naive Bayes to detect SPAM - SMS messages.
 * __/titanic__ - A classifier to detect if a passanger survived or died during the Titanic disaster.
 
 _Studying material (/learning_material):_
